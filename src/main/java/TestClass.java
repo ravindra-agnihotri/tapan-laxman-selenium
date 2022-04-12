@@ -13,6 +13,25 @@ public class TestClass {
         driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
         driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("admin123");
         driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
+        driver.findElement(By.xpath("//a[@id=\"menu_admin_viewAdminModule\"]")).click();
+        driver.findElement(By.xpath("//a[@id=\"menu_pim_viewPimModule\"]")).click();
+        driver.findElement(By.xpath("//a[@id=\"menu_leave_viewLeaveModule\"]")).click();
+        driver.findElement(By.xpath("//a[@id=\"menu_time_viewTimeModule\"]")).click();
+        driver.findElement(By.xpath("//a[@id=\"menu_recruitment_viewRecruitmentModule\"]")).click();
+        driver.findElement(By.xpath("//a[@id=\"menu_pim_viewMyDetails\"]")).click();
+        driver.findElement(By.xpath("//a[@id=\"menu__Performance\"]")).click();
+        driver.findElement(By.xpath("//a[@id=\"menu_dashboard_index\"]")).click();
+            driver.findElement(By.xpath("//span[@class=\"quickLinkText\"]")).click();
+            System.out.println("Hellooooooooooooooooooooo");
+            driver.notify();
+
+
+
+        driver.findElement(By.xpath("//a[@id=\"menu_directory_viewDirectory\"]")).click();
+        driver.findElement(By.xpath("//a[@id=\"menu_maintenance_purgeEmployee\"]")).click();
+        driver.findElement(By.xpath("//a[@id=\"menu_buzz_viewBuzz\"]")).click();
+
+
 
     }
 

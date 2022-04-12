@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="755e3ead-9e43-4ae9-a410-705b611101da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laxman-tapan-selenium.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/OnePage.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,17 +26,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="27dJvqDoNmnUwvWQZ0IWOdKNyRa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -81,34 +76,15 @@
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1860" height="276" key="GridCell.Tab.0.bottom" timestamp="1649732926983">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1860" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1649732926983" />
-    <state width="1860" height="276" key="GridCell.Tab.0.center" timestamp="1649732926983">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1860" height="276" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1649732926983" />
-    <state width="1860" height="276" key="GridCell.Tab.0.left" timestamp="1649732926982">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1860" height="276" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1649732926982" />
-    <state width="1860" height="276" key="GridCell.Tab.0.right" timestamp="1649732926983">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1860" height="276" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1649732926983" />
-    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1649730376212">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649730376212" />
-    <state x="463" y="161" key="SettingsEditor" timestamp="1649729861764">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="463" y="161" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1649729861764" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1649646260383">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1649646260383" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
