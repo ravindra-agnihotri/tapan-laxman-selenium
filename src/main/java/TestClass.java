@@ -1,7 +1,9 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class TestClass {
 
@@ -24,6 +26,11 @@ public class TestClass {
             driver.findElement(By.xpath("//span[@class=\"quickLinkText\"]")).click();
             driver.findElement(By.xpath("//input[@id='assignleave_txtEmployee_empName']")).sendKeys("Tapan Bojja");
             driver.findElement(By.xpath("//textarea[@id ='assignleave_txtComment']")).sendKeys("This is the comment added by Tapan");
+
+            // code to select value from 'Leave Type' drop down
+            WebElement element = driver.findElement(By.xpath("//select[@id='assignleave_txtLeaveType']"));
+            Select select = new Select(element);
+            select.selectByVisibleText("CAN - Vacation");
 
 
         driver.findElement(By.xpath("//a[@id=\"menu_directory_viewDirectory\"]")).click();
