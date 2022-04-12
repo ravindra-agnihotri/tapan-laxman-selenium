@@ -27,10 +27,13 @@ public class TestClass {
             driver.findElement(By.xpath("//input[@id='assignleave_txtEmployee_empName']")).sendKeys("Tapan Bojja");
             driver.findElement(By.xpath("//textarea[@id ='assignleave_txtComment']")).sendKeys("This is the comment added by Tapan");
 
+
             // code to select value from 'Leave Type' drop down
             WebElement element = driver.findElement(By.xpath("//select[@id='assignleave_txtLeaveType']"));
             Select select = new Select(element);
             select.selectByVisibleText("CAN - Vacation");
+
+            driver.findElement(By.xpath("//input[@id='assignBtn']")).click();
 
 
         driver.findElement(By.xpath("//a[@id=\"menu_directory_viewDirectory\"]")).click();
