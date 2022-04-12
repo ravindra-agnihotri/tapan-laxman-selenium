@@ -22,9 +22,8 @@ public class TestClass {
         driver.findElement(By.xpath("//a[@id=\"menu__Performance\"]")).click();
         driver.findElement(By.xpath("//a[@id=\"menu_dashboard_index\"]")).click();
             driver.findElement(By.xpath("//span[@class=\"quickLinkText\"]")).click();
-            System.out.println("Hellooooooooooooooooooooo");
-            driver.notify();
-
+            driver.findElement(By.xpath("//input[@id='assignleave_txtEmployee_empName']")).sendKeys("Tapan Bojja");
+            driver.findElement(By.xpath("//textarea[@id ='assignleave_txtComment']")).sendKeys("This is the comment added by Tapan");
 
 
         driver.findElement(By.xpath("//a[@id=\"menu_directory_viewDirectory\"]")).click();
