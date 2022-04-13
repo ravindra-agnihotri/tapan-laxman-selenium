@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="755e3ead-9e43-4ae9-a410-705b611101da" name="Default Changelist" comment="Added code for Leave Type dropdown">
+    <list default="true" id="755e3ead-9e43-4ae9-a410-705b611101da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestClass.class" afterDir="false" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -109,7 +109,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -119,5 +121,27 @@
     <MESSAGE value="Committing some more navigation code" />
     <MESSAGE value="Added code for Leave Type dropdown" />
     <option name="LAST_COMMIT_MESSAGE" value="Added code for Leave Type dropdown" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1649818617825">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649818617825" />
+    <state width="1860" height="276" key="GridCell.Tab.0.bottom" timestamp="1649818922353">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1860" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1649818922353" />
+    <state width="1860" height="276" key="GridCell.Tab.0.center" timestamp="1649818922353">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1860" height="276" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1649818922353" />
+    <state width="1860" height="276" key="GridCell.Tab.0.left" timestamp="1649818922352">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1860" height="276" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1649818922352" />
+    <state width="1860" height="276" key="GridCell.Tab.0.right" timestamp="1649818922353">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1860" height="276" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1649818922353" />
   </component>
 </project>
