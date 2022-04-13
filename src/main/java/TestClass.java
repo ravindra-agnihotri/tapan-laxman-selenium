@@ -8,32 +8,32 @@ import org.openqa.selenium.support.ui.Select;
 public class TestClass {
 
     public static void main(String[] args) {
-       // System.setProperty("webdriver.chrome.driver","C:/downloads/chrome");
+        // System.setProperty("webdriver.chrome.driver","C:/downloads/chrome");
         WebDriverManager.chromedriver().setup();
-        WebDriver driver=new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://opensource-demo.orangehrmlive.com/");
         driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
         driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("admin123");
         driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_admin_viewAdminModule\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_pim_viewPimModule\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_leave_viewLeaveModule\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_time_viewTimeModule\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_recruitment_viewRecruitmentModule\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_pim_viewMyDetails\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu__Performance\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_dashboard_index\"]")).click();
-            driver.findElement(By.xpath("//span[@class=\"quickLinkText\"]")).click();
-            driver.findElement(By.xpath("//input[@id='assignleave_txtEmployee_empName']")).sendKeys("Tapan Bojja");
-            driver.findElement(By.xpath("//textarea[@id ='assignleave_txtComment']")).sendKeys("This is the comment added by Tapan");
+        driver.findElement(By.xpath("//a[@id='menu_admin_viewAdminModule']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_pim_viewPimModule']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_leave_viewLeaveModule']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_time_viewTimeModule']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_recruitment_viewRecruitmentModule']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_pim_viewMyDetails']")).click();
+        driver.findElement(By.xpath("//a[@id='menu__Performance']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_dashboard_index']")).click();
+        driver.findElement(By.xpath("//span[@class='quickLinkText']")).click();
+        driver.findElement(By.xpath("//input[@id='assignleave_txtEmployee_empName']")).sendKeys("Tapan Bojja");
+        driver.findElement(By.xpath("//textarea[@id ='assignleave_txtComment']")).sendKeys("This is the comment added by Tapan");
 
 
-            // code to select value from 'Leave Type' drop down
-            WebElement element = driver.findElement(By.xpath("//select[@id='assignleave_txtLeaveType']"));
-            Select select = new Select(element);
-            select.selectByVisibleText("CAN - Vacation");
+        // code to select value from 'Leave Type' drop down
+        WebElement element = driver.findElement(By.xpath("//select[@id='assignleave_txtLeaveType']"));
+        Select select = new Select(element);
+        select.selectByVisibleText("CAN - Vacation");
 
-            driver.findElement(By.xpath("//input[@id='assignBtn']")).click();
+        driver.findElement(By.xpath("//input[@id='assignBtn']")).click();
 
 
         driver.findElement(By.xpath("//a[@id=\"menu_directory_viewDirectory\"]")).click();
@@ -41,9 +41,7 @@ public class TestClass {
         driver.findElement(By.xpath("//a[@id=\"menu_buzz_viewBuzz\"]")).click();
 
 
-
     }
-
 
 
 }
