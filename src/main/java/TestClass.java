@@ -59,3 +59,11 @@ public class TestClass {
 
 
 }
+/*
+variable types
+explicit wait
+calandar
+xpath relation
+
+frames
+ */
