@@ -15,20 +15,21 @@ public class TestClass {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
        //implicit wait
-       driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         driver.navigate().to("https://opensource-demo.orangehrmlive.com/");
         driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
         driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("admin123");
         driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_admin_viewAdminModule\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_pim_viewPimModule\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_leave_viewLeaveModule\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_time_viewTimeModule\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_recruitment_viewRecruitmentModule\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu_pim_viewMyDetails\"]")).click();
-        driver.findElement(By.xpath("//a[@id=\"menu__Performance\"]")).click();
+        driver.findElement(By.xpath("//a[@id='menu_admin_viewAdminModule']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_pim_viewPimModule']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_leave_viewLeaveModule']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_time_viewTimeModule']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_recruitment_viewRecruitmentModule']")).click();
+        driver.findElement(By.xpath("//a[@id='menu_pim_viewMyDetails']")).click();
+        driver.findElement(By.xpath("//a[@id='menu__Performance']")).click();
         driver.findElement(By.xpath("//a[@id='menu_dashboard_index']")).click();
-        driver.findElement(By.xpath("//span[@class=\"quickLinkText\"]")).click();
+        driver.findElement(By.xpath("//span[@class='quickLinkText']")).click();
         driver.findElement(By.xpath("//input[@id='assignleave_txtEmployee_empName']")).sendKeys("Tapan Bojja");
         driver.findElement(By.xpath("//textarea[@id ='assignleave_txtComment']")).sendKeys("This is the comment added by Tapan");
         //escape character

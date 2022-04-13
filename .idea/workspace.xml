@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="755e3ead-9e43-4ae9-a410-705b611101da" name="Default Changelist" comment="">
+    <list default="true" id="755e3ead-9e43-4ae9-a410-705b611101da" name="Default Changelist" comment="added code to submit leave">
       <change beforePath="$PROJECT_DIR$/src/main/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,9 +114,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -127,43 +125,5 @@
     <MESSAGE value="Added code for Leave Type dropdown" />
     <MESSAGE value="committed select and actions class" />
     <option name="LAST_COMMIT_MESSAGE" value="committed select and actions class" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1649818617825">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649818617825" />
-    <state x="619" y="111" key="CommitChangelistDialog2" timestamp="1649819133587">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="619" y="111" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1649819133587" />
-    <state width="1860" height="276" key="GridCell.Tab.0.bottom" timestamp="1649819254578">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1860" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1649819254578" />
-    <state width="1860" height="276" key="GridCell.Tab.0.center" timestamp="1649819254578">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1860" height="276" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1649819254578" />
-    <state width="1860" height="276" key="GridCell.Tab.0.left" timestamp="1649819254578">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1860" height="276" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1649819254578" />
-    <state width="1860" height="276" key="GridCell.Tab.0.right" timestamp="1649819254578">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1860" height="276" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1649819254578" />
-    <state x="184" y="85" key="MergeDialog" timestamp="1649819246048">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="184" y="85" key="MergeDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649819246048" />
-    <state x="672" y="233" key="MultipleFileMergeDialog" timestamp="1649819246076">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="672" y="233" key="MultipleFileMergeDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1649819246076" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1649819272370">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1649819272370" />
   </component>
 </project>
