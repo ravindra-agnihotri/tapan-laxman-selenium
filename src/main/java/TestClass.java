@@ -4,26 +4,40 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
 public class TestClass {
-
+    public static WebDriver driver;//daru nai pita aisa driver de           =========//null
     public static void main(String[] args) {
+login();
+restOps();
+
+
+    }
+
+    public static void login(){//gadi chalu ho rahi hai company k liye
         // System.setProperty("webdriver.chrome.driver","C:/downloads/chrome");
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-       //implicit wait
-
-        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+        driver = new ChromeDriver();//na daru pine wala driver mangaya         ==============//chromedriver chi capability
+        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS); //implicit wait
         driver.navigate().to("https://opensource-demo.orangehrmlive.com/");
         driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
         driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("admin123");
         driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
+    }
+
+    public static void restOps(){
+
         driver.findElement(By.xpath("//a[@id='menu_admin_viewAdminModule']")).click();
         driver.findElement(By.xpath("//a[@id='menu_pim_viewPimModule']")).click();
         driver.findElement(By.xpath("//a[@id='menu_leave_viewLeaveModule']")).click();
+
+        WebDriverWait webDriverWait= new WebDriverWait(driver, 60);
+        webDriverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@id='menu_time_viewTimeModule']"))));
         driver.findElement(By.xpath("//a[@id='menu_time_viewTimeModule']")).click();
         driver.findElement(By.xpath("//a[@id='menu_recruitment_viewRecruitmentModule']")).click();
         driver.findElement(By.xpath("//a[@id='menu_pim_viewMyDetails']")).click();
@@ -39,9 +53,9 @@ public class TestClass {
         Select select = new Select(element);
         select.selectByVisibleText("CAN - Vacation");
 
-      /*  Select select1= new Select(driver.findElement(By.xpath("xpath for dropdown")));
-        select1.*/
-
+       /* Select select1= new Select(driver.findElement(By.xpath("xpath for dropdown")));
+        select1.
+*/
 
 
         driver.findElement(By.xpath("//input[@id='assignBtn']")).click();
@@ -55,14 +69,38 @@ public class TestClass {
                 .moveToElement(driver.findElement(By.xpath("//a[@id='menu_admin_UserManagement']")))
                 .click(driver.findElement(By.xpath("//a[@id='menu_admin_viewSystemUsers']"))).build().perform();
 
-
     }
 
 
+/*
+local variable= it has limit only inside { and } brackets
+Global variable= a variable defined inside class as public and static type is called as global var.
+Instance variable= it is a variable which is called by class object and has value limited till that object
+ */
+
+/*
+public  int j=0;
+    public void a(){
+        System.out.println(j);
+    }
+    public void b(){
+        System.out.println(j);
+    }
+
+    public static void main(String[] args) {
+        TestClass testClass= new TestClass();
+        System.out.println(testClass);
+        testClass.j=1;
+        System.out.println(testClass.j);
+        TestClass testClass1=new TestClass();
+        System.out.println(testClass1);
+    }
+*/
+
 }
 /*
-variable types
-explicit wait
+variable types -- done
+explicit wait -- done
 calandar
 xpath relation
 
