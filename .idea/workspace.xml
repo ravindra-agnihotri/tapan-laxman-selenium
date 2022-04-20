@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="755e3ead-9e43-4ae9-a410-705b611101da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassForList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xpathRelations.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestClass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649819381511</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="committing 14-04 class">
+      <created>1649905729324</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649905729324</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,9 +145,14 @@
     <MESSAGE value="Added code for Leave Type dropdown" />
     <MESSAGE value="committed select and actions class" />
     <MESSAGE value="topics" />
-    <option name="LAST_COMMIT_MESSAGE" value="topics" />
+    <MESSAGE value="committing 14-04 class" />
+    <option name="LAST_COMMIT_MESSAGE" value="committing 14-04 class" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="619" y="111" key="CommitChangelistDialog2" timestamp="1649905726069">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="619" y="111" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1649905726069" />
     <state width="1860" height="276" key="GridCell.Tab.0.bottom" timestamp="1649904092844">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -154,5 +169,17 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1860" height="276" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1649904092843" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1649905741140">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1649905741140" />
+    <state x="625" y="319" key="git4idea.merge.GitPullDialog" timestamp="1650418626169">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="625" y="319" key="git4idea.merge.GitPullDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1650418626169" />
+    <state x="342" y="224" key="new project wizard" timestamp="1650378337380">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="342" y="224" key="new project wizard/0.0.1920.1032@0.0.1920.1032" timestamp="1650378337380" />
   </component>
 </project>

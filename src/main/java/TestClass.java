@@ -8,16 +8,21 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Stream;
 
 public class TestClass {
     public static WebDriver driver;//daru nai pita aisa driver de           =========//null
     public static void main(String[] args) {
 login();
-restOps();
+//restOps();
 
 
     }
+
+
+
 
     public static void login(){//gadi chalu ho rahi hai company k liye
         // System.setProperty("webdriver.chrome.driver","C:/downloads/chrome");
@@ -28,9 +33,14 @@ restOps();
         driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
         driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("admin123");
         driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
-    }
+        List menu=driver.findElements(By.xpath(" //li[@class=\"main-menu-first-level-list-item\"]//child::a[@class=\"firstLevelMenu\"]//b"));
+
+
+    }//ul[@id="mainMenuFirstLevelUnorderedList"]//a[@class="firstLevelMenu"]//b
+    //li[@class="main-menu-first-level-list-item"]//child::a[@class="firstLevelMenu"]//b
 
     public static void restOps(){
+
 
         driver.findElement(By.xpath("//a[@id='menu_admin_viewAdminModule']")).click();
         driver.findElement(By.xpath("//a[@id='menu_pim_viewPimModule']")).click();
@@ -50,6 +60,7 @@ restOps();
 
         // code to select value from 'Leave Type' drop down
         WebElement element = driver.findElement(By.xpath("//select[@id='assignleave_txtLeaveType']"));
+
         Select select = new Select(element);
         select.selectByVisibleText("CAN - Vacation");
 
@@ -101,8 +112,11 @@ public  int j=0;
 /*
 variable types -- done
 explicit wait -- done
-calandar
+calendar
 xpath relation
+select - done
+action - done
+for, foreach
 
 frames
  */

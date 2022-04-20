@@ -1,0 +1,16 @@
+parent
+
+child
+
+following -- pudche sage
+
+preceding -- magche sage
+
+preceding-sibling
+
+following-sibling
+
+
+
+
+xpath// relation :: targetxpath without //
