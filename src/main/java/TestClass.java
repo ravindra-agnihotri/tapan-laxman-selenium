@@ -33,8 +33,19 @@ login();
         driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
         driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("admin123");
         driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
-        List menu=driver.findElements(By.xpath(" //li[@class=\"main-menu-first-level-list-item\"]//child::a[@class=\"firstLevelMenu\"]//b"));
-
+        List<WebElement> menu=driver.findElements(By.xpath(" //li[@class=\"main-menu-first-level-list-item\"]//child::a[@class=\"firstLevelMenu\"]//b"));
+        // kuth paun ; kuth paryant ; kasa
+      /*  for (int i =0;i<=menu.size()-1; i++){
+            if (menu.get(i).getText().equals("Time")){
+                menu.get(i).click();
+                break;
+            }*/
+        for (WebElement element  : menu   ) {
+            if (element.getText().equals("Time")){
+                element.click();
+                break;
+        }
+        }
 
     }//ul[@id="mainMenuFirstLevelUnorderedList"]//a[@class="firstLevelMenu"]//b
     //li[@class="main-menu-first-level-list-item"]//child::a[@class="firstLevelMenu"]//b
