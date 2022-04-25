@@ -11,14 +11,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class LaxmanTest {
+public class Laxmantest {
 
     public static WebDriver driver;//daru nai pita aisa driver de           =========//null
     public static void main(String[] args) {
         login();
 
 
-}
+    }
 
 
     public static void login(){//gadi chalu ho rahi hai company k liye
@@ -47,8 +47,43 @@ public class LaxmanTest {
                 break;
             }
         }
+// navgate to Time >> Timesheets >> My Timesheets Using List
 
-    }//ul[@id="mainMenuFirstLevelUnorderedList"]//a[@class="firstLevelMenu"]//b
+        //Second level = //li[@class='current main-menu-first-level-list-item']//child::a[@class='arrow']
+        // Thrid level = //li[@class='current main-menu-first-level-list-item']//ul/li[1]/ul[1]/li/a
+
+        List<WebElement> menu2=driver.findElements(By.xpath(" //li[@class='current main-menu-first-level-list-item']//child::a[@class='arrow']"));
+        for (int i =0;i<=menu2.size()-1; i++) {
+            if (menu2.get(i).getText().equals("Timesheets")) {
+                menu2.get(i).click();
+                break;
+            }
+        }
+
+
+        List<WebElement> menu3 =driver.findElements(By.xpath("//li[@class='current main-menu-first-level-list-item']//ul/li[1]/ul[1]/li/a"));
+
+        for (int i =0;i<=menu3.size()-1; i++) {
+            if (menu3.get(i).getText().equals("My Timesheets")) {
+                menu3.get(i).click();
+                break;
+            }
+        }
+
+
+
+        // Navigate to Time >> Timesheet >> My Timesheet using list and action
+
+        Actions actions= new Actions(driver);
+        actions.moveToElement(driver.findElement(By.xpath("//li[@class='current main-menu-first-level-list-item']//child::a[@class='arrow']")))
+                .click(driver.findElement(By.xpath("//li[@class='current main-menu-first-level-list-item']//ul/li[1]/ul[1]/li/a"))).build().perform();
+
+    }
+
+
+
+
+    //ul[@id="mainMenuFirstLevelUnorderedList"]//a[@class="firstLevelMenu"]//b
     //li[@class="main-menu-first-level-list-item"]//child::a[@class="firstLevelMenu"]//b
 
     public static void restOps(){
@@ -95,16 +130,11 @@ public class LaxmanTest {
 
 
 
-        //Second level = //li[@class='current main-menu-first-level-list-item']//child::a[@class='arrow']
-        // Thrid level = //li[@class='current main-menu-first-level-list-item']//ul/li[1]/ul[1]/li/a
 
-
-        //*[@id="menu_time_viewMyTimesheet"]
-        /html/body/div[1]/div[2]/ul/li[4]/ul/li[1]/ul/li[1]/a
 
     }
 
-
+}
 /*
 local variable= it has limit only inside { and } brackets
 Global variable= a variable defined inside class as public and static type is called as global var.
@@ -130,7 +160,7 @@ public  int j=0;
     }
 */
 
-}
+
 /*
 variable types -- done
 explicit wait -- done
