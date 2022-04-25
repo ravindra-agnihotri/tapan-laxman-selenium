@@ -35,8 +35,12 @@ public class LaxmanTest {
       /*  for (int i =0;i<=menu.size()-1; i++){
             if (menu.get(i).getText().equals("Time")){
                 menu.get(i).click();
-                break;
+                        break;
+
+                        //Test
             }*/
+
+
         for (WebElement element  : menu   ) {
             if (element.getText().equals("Time")){
                 element.click();
